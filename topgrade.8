@@ -1,0 +1,77 @@
+.hy
+.TH "topgrade" "8" "29 Febuary 2020" "topgrade 4.1.1"
+.SH NAME
+.PP
+topgrade \- upgrade everything
+.SH SYNOPSIS
+.PP
+topgrade [\fIoptions\f[]]
+.SH DESCRIPTION
+.PP
+Keeping your system up to date mostly involves invoking more than a single package manager.
+This usually results in big shell one-liners saved in your shell history.
+\fBtopgrade\fR tries to solve this problem by detecting which tools you use and run their appropriate package managers.
+.SH OPTIONS
+.TP
+.B \-\-only <only>
+Run specific steps
+.RS
+.RE
+.TP
+.B \-\-disable <disable>
+Disable specific steps
+.RS
+.RE
+.TP
+.B \-c, \-\-cleanup
+Cleanup temporary or old files
+.RS
+.RE
+.TP
+.B \-n, \-\-dry\-run
+Outputs steps simulation
+.RS
+.RE
+.TP
+.B \-\-edit\-config
+Edit the configuration file
+.RS
+.RE
+.TP
+.B \-h, \-\-help
+Prints help information
+.RS
+.RE
+.TP
+.B \-k, \-\-keep
+Prompt for a key before exiting
+.RS
+.RE
+.TP
+.B \-\-no\-retry
+Do not ask to retry failed steps
+.RS
+.RE
+.TP
+.B \-t, \-\-tmux
+Run inside tmux
+.RS
+.RE
+.TP
+.B \-V, \-\-version
+Prints version information
+.RS
+.RE
+.TP
+.B \-v, \-\-verbose
+Output logs
+.RS
+.RE
+.B \-y, \-\-yes
+Say yes to package manager's prompt (experimental)
+.SH BUGS
+For a list of bugs see <\fIhttps://github.com/r-darwish/topgrade/issues\fR>.
+.SH AUTHOR
+\fBtopgrade\fR is maintained by Roey Dror (\[aq]r\-darwish\[aq]) and many other contributors.
+You can view the full list at
+<\fIhttps://github.com/r-darwish/topgrade/graphs/contributors\fR>
